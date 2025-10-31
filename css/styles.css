@@ -1,9 +1,52 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/roboto-v49-cyrillic_latin-300.woff2') format('woff2'),
+        url("../fonts/roboto-v49-cyrillic_latin-300.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/roboto-v49-cyrillic_latin-600.woff2') format('woff2'),
+        url("../fonts/roboto-v49-cyrillic_latin-600.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/roboto-v49-cyrillic_latin-900.woff2') format('woff2'),
+        url("../fonts/roboto-v49-cyrillic_latin-900.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v49-cyrillic_latin-regular.woff2') format('woff2'),
+        url("../fonts/roboto-v49-cyrillic_latin-regular.woff") format("woff");
+}
+
+:root {
+    --color-dark: #31261A;
+    --color-light: #FAF4EA;
+    --accent: #819B57;
+    --accent-dark: #465929;
+}
+
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 h1,
@@ -13,37 +56,159 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+    margin: 0;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 a {
-  color: currentColor;
-  text-decoration: none;
+    color: currentColor;
+    text-decoration: none;
+    font-style: normal;
 }
 
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 body {
-  /* color: #2b2b2a;
-  font-family: Manrope;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.28;
-  letter-spacing: -0.28px;
-  background-color: #f9f9f9; */
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    line-height: 1.5;
 }
+
+.section {
+    padding: 48px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.accent {
+    color: var(--accent);
+}
+
+.button {
+    border-radius: 8px;
+    border: 2px solid var(--accent);
+    background: var(--accent);
+    width: 203px;
+    height: 44px;
+    color: var(--color-light);
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: grid;
+    place-items: center;
+}
+
+.button:hover {
+    color: var(--accent);
+    background: var(--color-light);
+}
+
+.link {
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    color: var(--accent);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+/* header */
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+/* hero */
+.hero-section {
+    padding: 272px 0;
+}
+
+.hero-title {
+    font-size: 128px;
+    font-weight: 900;
+    text-align: center;
+}
+
+/* advantages */
+.advantages-section {
+    padding: 16px 0;
+    background-color: var(--accent);
+}
+
+.advantages-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advantages-item {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--color-light);
+}
+
+/* traditions */
+.traditions-section {}
+
+/* chefs */
+
+
+/* formats */
+
+/* contacts */
+
+/* footer */
+/*@media screen and (min-width: 768px) {
+     ---- 
+}*/
