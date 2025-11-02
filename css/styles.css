@@ -108,6 +108,10 @@ body {
     color: var(--accent);
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 .button {
     border-radius: 8px;
     border: 2px solid var(--accent);
@@ -172,12 +176,23 @@ body {
 /* hero */
 .hero-section {
     padding: 272px 0;
+    background:
+        linear-gradient(103deg,
+            rgba(18, 18, 17, 0.78) 2.03%,
+            rgba(18, 18, 17, 0.60) 58.46%,
+            rgba(18, 18, 17, 0.00) 90.36%),
+        url("../images/hero.jpg"),
+        var(--accent);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
 
 .hero-title {
     font-size: 128px;
     font-weight: 900;
     text-align: center;
+    color: var(--color-light);
 }
 
 /* advantages */
@@ -199,16 +214,107 @@ body {
 }
 
 /* traditions */
-.traditions-section {}
+.traditions-section {
+    padding-top: 96px;
+}
+
+.traditions-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.traditions-content {
+    max-width: 710px;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.traditions-title {
+    font-size: 64px;
+    line-height: 1.3;
+    font-weight: 900;
+}
+
+
+
+.traditions-text.limited {
+    max-width: 340px;
+}
 
 /* chefs */
+.chefs-section {}
 
+.chefs-title {
+    text-align: center;
+}
+
+.chefs-list {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.chefs-item {
+    width: 604px;
+
+    article {
+        display: flex;
+        gap: 30px;
+    }
+}
 
 /* formats */
 
+
+.formats-title {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.3;
+}
+
+.formats-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.formats-item {
+    flex-basis: calc((100% - 40px) / 3);
+}
+
+.format-card {
+    width: 349px;
+    height: 444px;
+    border-radius: 16px;
+
+    background: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
+    padding: 24px;
+}
+
+.format-title {
+    font-size: 24px;
+
+    font-weight: 600;
+}
+
+.format-text {
+    font-size: 14px;
+
+    font-weight: 300;
+}
+
 /* contacts */
 
-/* footer */
+.footer {
+    background-color: var(--color-dark);
+    background-image: url("../images//footer-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 0% */
+}
+
 /*@media screen and (min-width: 768px) {
      ---- 
 }*/
