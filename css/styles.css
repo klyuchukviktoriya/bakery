@@ -39,6 +39,9 @@
     --color-light: #FAF4EA;
     --accent: #819B57;
     --accent-dark: #465929;
+    --accent-brown: #A18268;
+    --accent-grey: #CFCFBC;
+    ;
 }
 
 *,
@@ -88,7 +91,6 @@ body {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
     margin: 0;
     line-height: 1.5;
 }
@@ -106,6 +108,7 @@ body {
 
 .accent {
     color: var(--accent);
+    font-weight: 600;
 }
 
 .uppercase {
@@ -133,6 +136,7 @@ body {
 
 .link {
     transition: all 0.3s ease;
+    color: var(--color-light);
 }
 
 .link:hover {
@@ -243,11 +247,47 @@ body {
     max-width: 340px;
 }
 
+.traditions-img {
+    border-radius: 400px 400px 0 0;
+    width: 393px;
+    height: 466px;
+}
+
 /* chefs */
-.chefs-section {}
+.chefs-section {
+    margin-bottom: 112px;
+}
 
 .chefs-title {
     text-align: center;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.3;
+    max-width: 520px;
+    /* margin-bottom: 80px; */
+    margin: 0 auto 80px;
+}
+
+.chefs-title:before,
+.chefs-title:after {
+    content: "";
+    display: block;
+    border: 2px solid var(--accent-grey);
+    width: 352px;
+
+}
+
+/* .chefs-title-span::after {
+    content: "";
+    display: block;
+    border: 2px solid var(--accent-grey);
+    width: 352px;
+} */
+
+.chefs-title-span {
+    /* display: block; */
+    color: var(--accent-dark);
+
 }
 
 .chefs-list {
@@ -258,11 +298,30 @@ body {
 
 .chefs-item {
     width: 604px;
+}
 
-    article {
-        display: flex;
-        gap: 30px;
-    }
+.chef-card {
+    display: flex;
+    gap: 30px;
+}
+
+
+.chef-img {
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0 var(--color-light), -16px 16px 0 2px var(--accent-brown);
+    width: 240px;
+    height: 390px;
+}
+
+/* .chef-img::before, .chef-img::after{} */
+.chef-card-title {
+    margin-bottom: 12px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.chef-card-text {
+    margin-bottom: 24px;
 }
 
 /* formats */
@@ -272,12 +331,49 @@ body {
     font-size: 64px;
     font-weight: 900;
     line-height: 1.3;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.formats-button {
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease;
+    width: 44px;
+    height: 44px;
+    border: 0.8px solid var(--color-dark);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.formats-button:hover {
+    background-color: var(--color-dark);
+    /* border: none; */
+
+}
+
+.formats-icon {
+    width: 17px;
+    height: 17px;
+    /* fill: var(--color-light); */
+    stroke: var(--color-dark);
+    fill: var(--color-dark);
+    transition: all 0.3s ease;
+}
+
+.formats-button:hover>.formats-icon {
+
+    /* fill: var(--color-light); */
+    stroke: var(--color-light);
+    fill: var(--color-light);
 }
 
 .formats-list {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    /* justify-content: space-between; */
 }
 
 .formats-item {
@@ -295,8 +391,8 @@ body {
 
 .format-title {
     font-size: 24px;
-
     font-weight: 600;
+
 }
 
 .format-text {
@@ -308,11 +404,57 @@ body {
 /* contacts */
 
 .footer {
+    padding: 32px 0;
     background-color: var(--color-dark);
     background-image: url("../images//footer-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     /* background-position: 0% */
+
+}
+
+.footer-container {
+    display: flex;
+    gap: 166px;
+    justify-content: space-between;
+}
+
+.footer-nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.footer-link {
+    margin-bottom: 16px;
+}
+
+.address {}
+
+.address-link {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color-light);
+    margin-bottom: 16px;
+    /* max-width: 212px; */
+}
+
+.address-copy {
+    color: var(--accent-brown);
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.address-icons {
+    display: flex;
+    margin-bottom: 16px;
+    gap: 22px;
+}
+
+.address-icon {
+    width: 32px;
+    height: 32px;
+    fill: var(--color-light);
 }
 
 /*@media screen and (min-width: 768px) {

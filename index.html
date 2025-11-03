@@ -63,34 +63,36 @@
                                 готове</span>.
                             А ще у наших пекарень стильний дизайн та висока якість обслуговування!</p>
                     </div>
-                    <img src="./images/baker.jpg" alt="Пекар" width="393px" height="466px" />
+                    <img class="traditions-img" src="./images/baker.jpg" alt="Пекар">
                 </div>
             </div>
 
         </section>
         <section class="section chefs-section" id="chefs-section">
             <div class="container">
-                <h2 class="chefs-title">Наші найкращі шеф-кухарі</h2>
+                <h2 class="chefs-title">Наші найкращі <span class="chefs-title-span">шеф-кухарі</span> </h2>
 
                 <ul class="chefs-list">
                     <li class="chefs-item">
-                        <article>
-                            <img src="./images/nastya.jpg" alt="Шеф-кухар Настя" width="240px" height="390px">
+                        <article class="chef-card">
+                            <img class="chef-img" src="./images/nastya.jpg" alt="Шеф-кухар Настя">
                             <div>
-                                <h3>Настя</h3>
-                                <p>Привіт, я Настя!</p>
-                                <p> Вже 10 років, я свтілюю <br> у життя цікаві та смачні ідеї.</p>
+                                <h3 class="chef-card-title">Настя</h3>
+                                <p class="chef-card-text">Привіт, я Настя!</p>
+                                <p class="chef-card-text"> Вже 10 років, я свтілюю <br> у життя цікаві та смачні ідеї.
+                                </p>
                                 <p>Я випічу для вас <br> найсмачніщі вироби!</p>
                             </div>
                         </article>
                     </li>
                     <li class="chefs-item">
-                        <article>
-                            <img src="./images/vlad.jpg" alt="Шеф-кухар Влад" width="240px" height="390px">
+                        <article class="chef-card">
+                            <img class="chef-img" src="./images/vlad.jpg" alt="Шеф-кухар Влад">
                             <div>
-                                <h3>Влад</h3>
-                                <p>Привіт, я Влад!</p>
-                                <p>Мій кодитерський стаж вже 18 років. <br> SHOP BEKERY - це наша любов, з <br> якою ми
+                                <h3 class="chef-card-title">Влад</h3>
+                                <p class="chef-card-text">Привіт, я Влад!</p>
+                                <p class="chef-card-text">Мій кодитерський стаж вже 18 років. <br> SHOP BEKERY - це наша
+                                    любов, з <br> якою ми
                                     ділимось
                                     кожен
                                     раз з Вами <br> через нашу випічку!</p>
@@ -107,6 +109,11 @@
         <section class="section" id="formats-section">
             <div class="container">
                 <h2 class="formats-title">Формати</h2>
+                <button class="formats-button" type="button">
+                    <svg class="formats-icon">
+                        <use href="./images/sprite.svg#icon-arrow-left"></use>
+                    </svg>
+                </button>
                 <ul class="formats-list">
                     <li class="formats-item">
                         <article class="format-card">
@@ -136,7 +143,11 @@
                         </article>
                     </li>
                 </ul>
-
+                <button class="formats-button" type="button">
+                    <svg class="formats-icon">
+                        <use href="./images/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                </button>
             </div>
 
         </section>
@@ -153,53 +164,60 @@
                 </form> -->
                     <p>Натискаючи на кнопку я погоджуюсь <span>з політикою конфіденційності</span></p>
                 </div>
-                <iframe
+                <!-- <iframe
                     src="
                 https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1761785854499!5m2!1sru!2sua"
                     max-width="603" max-height="595" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    referrerpolicy="no-referrer-when-downgrade"></iframe> -->
             </div>
 
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <nav>
+        <div class="container footer-container">
+            <nav class="footer-nav">
                 <a href="/">
                     <img src="./images/logo.svg" alt="Логотип сучасної пекарі">
                 </a>
                 <ul>
-                    <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
-                    <li><a class="link" href="#traditions-section">Наші традиції</a></li>
-                    <li><a class="link" href="#formats-section">Формати</a></li>
-                    <li><a class="link" href="#contacts-section">Контакти</a></li>
+                    <li class="footer-link"><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+                    <li class="footer-link"><a class="link" href="#traditions-section">Наші традиції</a></li>
+                    <li class="footer-link"><a class="link" href="#formats-section">Формати</a></li>
+                    <li class="footer-link"><a class="link" href="#contacts-section">Контакти</a></li>
                 </ul>
 
             </nav>
-            <address>
+            <address class="address">
                 <ul>
-                    <li>
-                        <a class="link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
+                    <li class="address-link">
+                        <a href="tel:+380960000007">+ 38 (096) 000 00 07</a>
                     </li>
-                    <li>
-                        <a class="link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+                    <li class="address-link">
+                        <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
                     </li>
-                    <li>
-                        <a class="link" href="https://maps.app.goo.gl/ckiLxKu14iND2mD2A" target="_blank">Україна, м.
-                            Київ, вул.
-                            Січових
-                            Стрільців 54</a>
+                    <li class="address-link">
+                        <a href="https://maps.app.goo.gl/ckiLxKu14iND2mD2A" target="_blank">Україна, м.Київ, <br>
+                            вул.Січових Стрільців 54</a>
                     </li>
                 </ul>
 
             </address>
             <ul>
-                <li>
-                    <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer">facebook</a>
-                    <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer">instagram</a>
+                <li class="address-icons">
+                    <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <svg class="address-icon">
+                            <use href="./images/sprite.svg#icon-facebook"></use>
+                        </svg>
+
+                    </a>
+                    <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <svg class="address-icon">
+                            <use href="./images/sprite.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
                 </li>
-                <li>Політика конфіденційності</li>
-                <li>&copy; 2022 Дані захищені</li>
+                <li class="address-link">Політика конфіденційності</li>
+                <li class="address-copy">&copy; 2022 Дані захищені</li>
             </ul>
         </div>
 
