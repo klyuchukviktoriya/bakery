@@ -18,15 +18,14 @@
                         <img src="./images/logo.svg" alt="Логотип сучасної пекарі">
                     </a>
                     <ul class="header-menu">
-                        <li><a class="link" href="#traditions-section"><span class="accent">Наші
-                                    традиції</span></a>
+                        <li><a class="link" href="#traditions-section">Наші традиції</a>
                         </li>
                         <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
                         <li><a class="link" href="#formats-section">Формати</a></li>
                         <li><a class="link" href="#contacts-section">Контакти</a></li>
                     </ul>
                 </nav>
-                <button class="button" type="button">Замовити дзвінок</button>
+                <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
             </div>
         </div>
     </header>
@@ -34,7 +33,7 @@
     <main>
         <section class="section hero-section">
             <div class="container">
-                <h1 class="hero-title"><span class="accent">Сучасна</span> пекарня</h1>
+                <h1 class="hero-title centred"><span class="accent">Сучасна</span> пекарня</h1>
             </div>
         </section>
         <section class="advantages-section">
@@ -70,7 +69,8 @@
         </section>
         <section class="section chefs-section" id="chefs-section">
             <div class="container">
-                <h2 class="chefs-title">Наші найкращі <span class="chefs-title-span">шеф-кухарі</span> </h2>
+                <h2 class="chefs-title centred">Наші найкращі <br><span class="chefs-title-span">шеф-кухарі</span>
+                </h2>
 
                 <ul class="chefs-list">
                     <li class="chefs-item">
@@ -108,67 +108,74 @@
         </section>
         <section class="section" id="formats-section">
             <div class="container">
-                <h2 class="formats-title">Формати</h2>
-                <button class="formats-button" type="button">
-                    <svg class="formats-icon">
-                        <use href="./images/sprite.svg#icon-arrow-left"></use>
-                    </svg>
-                </button>
-                <ul class="formats-list">
-                    <li class="formats-item">
-                        <article class="format-card">
-                            <h3 class="format-title" lang="en">Walrus</h3>
-                            <p class="format-text">Площа: до 120 м2
-                                Меню: розширене меню
-                                Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби
-                                Посадкові місця: є</p>
-                        </article>
-                    </li>
-                    <li class="formats-item">
-                        <article class="format-card">
-                            <h3 class="format-title" lang="en">Horseshoe</h3>
-                            <p class="format-text">Площа: до 25 м2
-                                Меню: найпопулярніші позиції меню
-                                Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря
-                                Посадкові місця: відсутні</p>
-                        </article>
-                    </li>
-                    <li class="formats-item">
-                        <article class="format-card">
-                            <h3 class="format-title" lang="en">Handlebar</h3>
-                            <p class="format-text">Площа: до 15 м2
-                                Меню: найпопулярніші позиції меню
-                                Штат: 1 продавець, 1 пекар, 1 помічник пекаря
-                                Посадкові місця: відсутні</p>
-                        </article>
-                    </li>
-                </ul>
-                <button class="formats-button" type="button">
-                    <svg class="formats-icon">
-                        <use href="./images/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                </button>
+                <h2 class="formats-title centred">Формати</h2>
+                <div class="formats-flex">
+                    <button class="formats-button" type="button">
+                        <svg class="formats-icon">
+                            <use href="./images/sprite.svg#icon-arrow-left"></use>
+                        </svg>
+                    </button>
+                    <ul class="formats-list">
+                        <li class="formats-item">
+                            <article class="format-card">
+                                <h3 class="format-title" lang="en">Walrus</h3>
+                                <p class="format-text">Площа: до 120 м2
+                                    Меню: розширене меню
+                                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби
+                                    Посадкові місця: є</p>
+                            </article>
+                        </li>
+                        <li class="formats-item">
+                            <article class="format-card">
+                                <h3 class="format-title" lang="en">Horseshoe</h3>
+                                <p class="format-text">Площа: до 25 м2
+                                    Меню: найпопулярніші позиції меню
+                                    Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря
+                                    Посадкові місця: відсутні</p>
+                            </article>
+                        </li>
+                        <li class="formats-item">
+                            <article class="format-card">
+                                <h3 class="format-title" lang="en">Handlebar</h3>
+                                <p class="format-text">Площа: до 15 м2
+                                    Меню: найпопулярніші позиції меню
+                                    Штат: 1 продавець, 1 пекар, 1 помічник пекаря
+                                    Посадкові місця: відсутні</p>
+                            </article>
+                        </li>
+                    </ul>
+                    <button class="formats-button" type="button">
+                        <svg class="formats-icon">
+                            <use href="./images/sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+
             </div>
 
         </section>
         <section class="section" id="contacts-section">
-            <div class="container">
-                <div>
-                    <h2>Приєднуйся до мережі пекарень</h2>
+            <div class="container contacts-container">
+                <div class="contacts-aside">
+                    <h2 class="contacts-title">Приєднуйся до мережі пекарень</h2>
                     <p class="accent">Заповни форму, щоб ми звʼязались з тобою!</p>
-                    <!-- <form action="">
-                    <input type="text" name="" id="">
-                    <input type="tel" name="" id="">
-                    <input type="email" name="" id="">
-                    <button class=".button" type="submit">Замовити дзвінок</button>
-                </form> -->
-                    <p>Натискаючи на кнопку я погоджуюсь <span>з політикою конфіденційності</span></p>
+                    <form class="contacts-form" name="contact-form" autocomplete="on">
+                        <input class="contacts-input" type="text" name="" id="" placeholder="Ім’я">
+                        <input class="contacts-input" type="tel" name="" id="" placeholder="Телефон">
+                        <input class="contacts-input" type="email" name="" id="" placeholder="Електронна пошта">
+                        <button class="button" type="button">Замовити дзвінок</button>
+                    </form>
+
+                    <p class="contacts-agreement centred">Натискаючи на кнопку я погоджуюсь <span class="underlined">з
+                            <br>
+                            політикою
+                            конфіденційності</span></p>
                 </div>
-                <!-- <iframe
+                <iframe class="contacts-map"
                     src="
                 https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1761785854499!5m2!1sru!2sua"
-                    max-width="603" max-height="595" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                    max-width="603" height="595" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
         </section>
@@ -223,6 +230,31 @@
 
 
     </footer>
+
+    <div class="backdrop">
+        <div class="modal">
+            <button class="modal-btn-close" type="button">
+                <svg class="modal-icon">
+                    <use href="./images/sprite.svg#icon-x-modal"></use>
+                </svg>
+            </button>
+            <div class="contacts-aside">
+                <h2 class="contacts-title centred">Замовити дзвінок</h2>
+                <p class="accent centred">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+                <form class="contacts-form mdl" name="contact-form" autocomplete="on">
+                    <input class="contacts-input mdl" type="text" name="" id="" placeholder="Ім’я">
+                    <input class="contacts-input mdl" type="tel" name="" id="" placeholder="Телефон">
+                    <input class="contacts-input mdl" type="email" name="" id="" placeholder="Електронна пошта">
+                    <button class="button" type="button">Замовити дзвінок</button>
+                </form>
+
+                <p class="contacts-agreement centred">Натискаючи на кнопку я погоджуюсь <span class="underlined">з <br>
+                        політикою
+                        конфіденційності</span></p>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./js/modal.js"></script>
 </body>
 
 </html>
