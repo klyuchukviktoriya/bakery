@@ -156,7 +156,7 @@ body {
     padding: 0;
     white-space: nowrap;
     clip-path: inset(100%);
-    clip: rect(0, 0, 0, 0);
+    clip: rect(0 0 0 0);
     overflow: hidden;
 }
 
@@ -391,6 +391,13 @@ body {
 
 .formats-item {
     flex-basis: calc((100% - 40px) / 3);
+    color: var(--color-light);
+
+    img {
+        position: absolute;
+        width: 349px;
+        height: 444px;
+    }
 }
 
 .format-card {
@@ -399,6 +406,7 @@ body {
     border-radius: 16px;
     background: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
     padding: 24px;
+    position: relative;
 }
 
 .format-title {
@@ -438,12 +446,16 @@ body {
     margin: 42px 0 16px;
 }
 
+.form-field {
+    margin-bottom: 24px;
+    width: 100%;
+}
+
 .contacts-input {
-    width: 605px;
+    width: 100%;
     padding: 16px 42px;
     border-radius: 8px;
     border: 2px solid var(--accent-brown);
-    margin-bottom: 24px;
     outline: none;
     font-size: 16px;
     text-align: left;
@@ -558,7 +570,7 @@ body {
     background: rgba(49, 38, 26, 0.40);
 }
 
-.is-hidden {
+.backdrop.is-hidden {
     display: none;
 }
 
@@ -571,7 +583,7 @@ body {
     border-radius: 32px;
     margin: 0 auto;
     position: relative;
-    position: relative;
+    overflow-y: auto;
 }
 
 .modal-btn-close {
@@ -622,7 +634,7 @@ body {
     margin: 72px 0 24px;
 }
 
-.contacts-input.mdl {
+.form-field.mdl {
     margin-bottom: 32px;
 }
 
