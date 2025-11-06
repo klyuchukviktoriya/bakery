@@ -2,13 +2,22 @@
 @import "./utils/variables";
 @import "./utils/fonts";
 @import "./utils/utils";
+@import "./utils/mixins";
+
 @import "./components/buttons";
+@import "./components/logo";
 @import "./components/links";
-@import "./components/header";
-@import "./components/hero";
-@import "./components/advantages";
-@import "./components/traditions";
-@import "./components/chefs";
-@import "./components/formats";
-@import "./components/contacts";
-@import "./components/footer";
+@import "./components/chef-card";
+@import "./components/format-card";
+@import "./components/forms";
+@import "./components/icons";
+
+@import "./layouts/header";
+@import "./layouts/hero-section";
+@import "./layouts/advantages-section";
+@import "./layouts/traditions-section";
+@import "./layouts/chefs-section";
+@import "./layouts/formats-section";
+@import "./layouts/contacts-section";
+@import "./layouts/footer";
+@import "./layouts/modal";

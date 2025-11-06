@@ -1,0 +1,61 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(49, 38, 26, 0.40);
+
+    &.is-hidden {
+        display: none;
+    }
+}
+
+
+
+.modal {
+    width: 880px;
+    height: 880px;
+    flex-shrink: 0;
+    background-color: var(--color-light);
+    padding: 128px;
+    border-radius: 32px;
+    margin: 0 auto;
+    position: relative;
+    overflow-y: auto;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 20px;
+        background-size: cover;
+    }
+
+    &::before {
+        background-image: url("../images/modal-bread.png");
+        width: 160px;
+        height: 220px;
+        z-index: 2;
+        right: 0;
+    }
+
+    &::after {
+        background-image: url("../images/modal-sign.png");
+        width: 160px;
+        height: 160px;
+        z-index: 1;
+        right: 12px;
+    }
+
+    &__title {
+        font-size: 64px;
+        font-weight: 900;
+        line-height: 1.3;
+        margin-bottom: 16px;
+    }
+
+    &__agreement {
+        font-size: 12px;
+    }
+}

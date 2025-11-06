@@ -1,0 +1,36 @@
+.formats {
+    &__icon {
+        width: 17px;
+        height: 17px;
+        stroke: var(--color-dark);
+        fill: var(--color-dark);
+        transition: all 0.3s ease;
+    }
+
+    &__button:hover>&__icon {
+        stroke: var(--color-light);
+        fill: var(--color-light);
+    }
+}
+
+
+.footer {
+    &__icon {
+        width: 32px;
+        height: 32px;
+        fill: var(--color-light);
+        transition: all 0.3s ease;
+
+        &:hover {
+            fill: var(--accent-grey);
+        }
+    }
+}
+
+.modal-icon {
+    width: 32px;
+    height: 32px;
+    stroke: var(--color-dark);
+    fill: var(--color-light);
+
+}

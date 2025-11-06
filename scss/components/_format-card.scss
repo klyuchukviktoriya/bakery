@@ -1,0 +1,47 @@
+.format {
+    &__image {
+        position: absolute;
+        width: 349px;
+        height: 444px;
+    }
+
+    &__card {
+        width: 349px;
+        height: 444px;
+        border-radius: 16px;
+        background: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
+        padding: 24px;
+        position: relative;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 248px 0 16px;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    &__card {
+        width: 349px;
+        height: 444px;
+        border-radius: 16px;
+        background: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
+        padding: 24px;
+        position: relative;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 248px 0 16px;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}

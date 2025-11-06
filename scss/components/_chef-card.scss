@@ -1,0 +1,27 @@
+.chef-card {
+    display: flex;
+    gap: 30px;
+
+    &__image {
+        border-radius: 4px 4px 4px 200px;
+        box-shadow: -16px 16px 0 0 var(--color-light), -16px 16px 0 2px var(--accent-brown);
+        width: 240px;
+        height: 390px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: scale(1.03);
+            z-index: 1;
+        }
+    }
+
+    &__title {
+        margin-bottom: 12px;
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    &__text {
+        margin-bottom: 24px;
+    }
+}

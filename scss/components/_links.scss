@@ -1,8 +1,29 @@
 .link {
     transition: all 0.3s ease;
     color: var(--color-light);
+
+    &:hover {
+        color: var(--accent);
+    }
 }
 
-.link:hover {
-    color: var(--accent);
+
+.footer {
+    &__link {
+        margin-bottom: 16px;
+    }
+
+    &__address {
+        &--link {
+            font-size: 16px;
+            font-weight: 300;
+            color: var(--color-light);
+            margin-bottom: 16px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: var(--accent-grey);
+            }
+        }
+    }
 }
