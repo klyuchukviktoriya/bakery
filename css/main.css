@@ -1,40 +1,3 @@
-@font-face {
-  font-display: swap;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/roboto-v49-cyrillic_latin-300.woff2") format("woff2"), url("../fonts/roboto-v49-cyrillic_latin-300.woff") format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/roboto-v49-cyrillic_latin-600.woff2") format("woff2"), url("../fonts/roboto-v49-cyrillic_latin-600.woff") format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/roboto-v49-cyrillic_latin-900.woff2") format("woff2"), url("../fonts/roboto-v49-cyrillic_latin-900.woff") format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/roboto-v49-cyrillic_latin-regular.woff2") format("woff2"), url("../fonts/roboto-v49-cyrillic_latin-regular.woff") format("woff");
-}
-:root {
-  --color-dark: #31261A;
-  --color-light: #FAF4EA;
-  --accent: #819B57;
-  --accent-dark: #465929;
-  --accent-brown: #A18268;
-  --accent-grey: #CFCFBC;
-}
-
 *,
 *::before,
 *::after {
@@ -86,15 +49,54 @@ body {
   line-height: 1.5;
 }
 
-.section {
-  padding: 48px 0;
+:root {
+  --color-dark: #31261A;
+  --color-light: #FAF4EA;
+  --accent: #819B57;
+  --accent-dark: #465929;
+  --accent-brown: #A18268;
+  --accent-grey: #CFCFBC;
 }
 
-.container {
-  width: 100%;
-  max-width: 1288px;
-  margin: 0 auto;
-  padding: 0 24px;
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/roboto-v49-cyrillic_latin-300.woff2") format("woff2"), url("../fonts/roboto-v49-cyrillic_latin-300.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/roboto-v49-cyrillic_latin-600.woff2") format("woff2"), url("../fonts/roboto-v49-cyrillic_latin-600.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/roboto-v49-cyrillic_latin-900.woff2") format("woff2"), url("../fonts/roboto-v49-cyrillic_latin-900.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v49-cyrillic_latin-regular.woff2") format("woff2"), url("../fonts/roboto-v49-cyrillic_latin-regular.woff") format("woff");
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .centred {
@@ -108,6 +110,21 @@ body {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .button {
@@ -138,32 +155,13 @@ body {
   color: var(--accent);
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.underlined {
-  text-decoration: underline;
-}
-
-/* header */
 .header {
   position: absolute;
   top: 32px;
   left: 0;
   width: 100%;
 }
-
-.header-container {
+.header .header-container {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -183,7 +181,6 @@ body {
   justify-content: center;
 }
 
-/* hero */
 .hero-section {
   padding: 272px 0;
   background: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url("../images/hero.jpg"), var(--accent);
@@ -198,7 +195,6 @@ body {
   color: var(--color-light);
 }
 
-/* advantages */
 .advantages-section {
   padding: 16px 0;
   background-color: var(--accent);
@@ -216,7 +212,6 @@ body {
   color: var(--color-light);
 }
 
-/* traditions */
 .traditions-section {
   padding-top: 96px;
 }
@@ -250,7 +245,6 @@ body {
   height: 466px;
 }
 
-/* chefs */
 .chefs-section {
   margin-bottom: 112px;
 }
@@ -317,7 +311,6 @@ body {
   margin-bottom: 24px;
 }
 
-/* formats */
 .formats-title {
   font-size: 64px;
   font-weight: 900;
@@ -372,7 +365,8 @@ body {
   flex-basis: calc((100% - 40px) / 3);
   color: var(--color-light);
 }
-.formats-item img {
+
+.formats-image {
   position: absolute;
   width: 349px;
   height: 444px;
@@ -398,7 +392,6 @@ body {
   font-weight: 300;
 }
 
-/* contacts */
 .contacts-container {
   display: flex;
   gap: 32px;
@@ -462,7 +455,6 @@ body {
   border-radius: 16px;
 }
 
-/* footer */
 .footer {
   padding: 32px 0;
   background-color: var(--color-dark);
@@ -512,7 +504,6 @@ body {
   margin-bottom: 16px;
 }
 
-/* .address {} */
 .address-link {
   font-size: 16px;
   font-weight: 300;
@@ -536,86 +527,4 @@ body {
   width: 32px;
   height: 32px;
   fill: var(--color-light);
-}
-
-/* modal */
-.backdrop {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: rgba(49, 38, 26, 0.4);
-}
-
-.backdrop.is-hidden {
-  display: none;
-}
-
-.modal {
-  width: 880px;
-  height: 880px;
-  flex-shrink: 0;
-  background-color: var(--color-light);
-  padding: 128px;
-  border-radius: 32px;
-  margin: 0 auto;
-  position: relative;
-  overflow-y: auto;
-}
-
-.modal-btn-close {
-  background-color: transparent;
-  border: none;
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  display: grid;
-  place-items: center;
-}
-
-.modal-icon {
-  width: 32px;
-  height: 32px;
-  stroke: var(--color-dark);
-  fill: var(--color-light);
-}
-
-.modal::before,
-.modal::after {
-  content: "";
-  position: absolute;
-  bottom: 20px;
-  background-size: cover;
-}
-
-.modal::before {
-  background-image: url("../images/modal-bread.png");
-  width: 160px;
-  height: 220px;
-  z-index: 2;
-  right: 0;
-}
-
-.modal::after {
-  background-image: url("../images/modal-sign.png");
-  width: 160px;
-  height: 160px;
-  z-index: 1;
-  right: 12px;
-}
-
-.contacts-form.mdl {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 72px 0 24px;
-}
-
-.form-field.mdl {
-  margin-bottom: 32px;
-}
-
-/*@media screen and (min-width: 768px) {
-     ---- 
-}*//*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

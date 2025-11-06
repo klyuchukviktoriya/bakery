@@ -1,0 +1,19 @@
+.hero-section {
+    padding: 272px 0;
+    background:
+        linear-gradient(103deg,
+            rgba(18, 18, 17, 0.78) 2.03%,
+            rgba(18, 18, 17, 0.60) 58.46%,
+            rgba(18, 18, 17, 0.00) 90.36%),
+        url("../images/hero.jpg"),
+        var(--accent);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.hero-title {
+    font-size: 128px;
+    font-weight: 900;
+    color: var(--color-light);
+}

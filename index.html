@@ -117,7 +117,7 @@
                     </button>
                     <ul class="formats-list">
                         <li class="formats-item">
-                            <img src="./images/format-1.jpg" alt="format-1">
+                            <img class="formats-image" src="./images/format-1.jpg" alt="format-1">
                             <article class="format-card">
                                 <h3 class="format-title" lang="en">Walrus</h3>
                                 <p class="format-text">Площа: до 120 м2
@@ -127,7 +127,7 @@
                             </article>
                         </li>
                         <li class="formats-item">
-                            <img src="./images/format-2.jpg" alt="format-2">
+                            <img class="formats-image" src="./images/format-2.jpg" alt="format-2">
                             <article class="format-card">
                                 <h3 class="format-title" lang="en">Horseshoe</h3>
                                 <p class="format-text">Площа: до 25 м2
@@ -137,7 +137,7 @@
                             </article>
                         </li>
                         <li class="formats-item">
-                            <img src="./images/format-3.jpg" alt="format-3">
+                            <img class="formats-image" src="./images/format-3.jpg" alt="format-3">
                             <article class="format-card">
                                 <h3 class="format-title" lang="en">Handlebar</h3>
                                 <p class="format-text">Площа: до 15 м2
@@ -253,29 +253,29 @@
                     <use href="./images/sprite.svg#icon-x-modal"></use>
                 </svg>
             </button>
-            <div class="contacts-aside">
-                <h2 class="contacts-title centred">Замовити дзвінок</h2>
+            <div>
+                <h2 class="modal-title centred">Замовити дзвінок</h2>
                 <p class="accent centred">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-                <form class="contacts-form mdl" name="contact-form" autocomplete="on">
-                    <div class="form-field mdl">
+                <form class="modal-form" name="contact-form" autocomplete="on">
+                    <div class="modal-field">
                         <label class="visually-hidden" for="modal-user-name">Ім’я</label>
-                        <input class="contacts-input" type="text" name="user-name" id="modal-user-name"
-                            placeholder="Ім’я" required minlength="6" maxlength="28">
+                        <input class="modal-input" type="text" name="user-name" id="modal-user-name" placeholder="Ім’я"
+                            required minlength="6" maxlength="28">
                     </div>
-                    <div class="form-field mdl">
+                    <div class="modal-field">
                         <label class="visually-hidden" for="modal-user-phone">Телефон</label>
-                        <input class="contacts-input" type="tel" name="user-phone" id="modal-user-phone"
+                        <input class="modal-input" type="tel" name="user-phone" id="modal-user-phone"
                             placeholder="Телефон" required pattern="^\+[0-9]{12}">
                     </div>
-                    <div class="form-field mdl">
+                    <div class="modal-field">
                         <label class="visually-hidden" for="modal-user-email">Електронна пошта</label>
-                        <input class="contacts-input" type="email" name="user-email" id="modal-user-email"
+                        <input class="modal-input" type="email" name="user-email" id="modal-user-email"
                             placeholder="Електронна пошта" required>
                     </div>
                     <button class="button" type="submit">Замовити дзвінок</button>
                 </form>
 
-                <p class="contacts-agreement centred">Натискаючи на кнопку я погоджуюсь <span class="underlined">з <br>
+                <p class="modal-agreement centred">Натискаючи на кнопку я погоджуюсь <span class="underlined">з <br>
                         політикою
                         конфіденційності</span></p>
             </div>
