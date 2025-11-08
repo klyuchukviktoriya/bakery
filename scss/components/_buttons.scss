@@ -1,4 +1,5 @@
-.button {
+.button,
+.hero__button {
     border-radius: 8px;
     border: 2px solid var(--accent);
     background: var(--accent);
@@ -11,23 +12,59 @@
     display: grid;
     place-items: center;
 
+    @media screen and (min-width: $bp-desktop) {
+        width: 238px;
+        height: 59px;
+        font-size: 18px;
+    }
+
     &:hover {
         color: var(--accent-dark);
         background: var(--color-light);
     }
 }
 
+.hero {
+    &__button {
+        margin: 0 auto;
 
-.modal {
-    &__btn-close {
+        @media screen and (min-width: $bp-desktop) {
+            display: none;
+        }
+    }
+}
+
+.header {
+    &__button {
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: block;
+        }
+    }
+
+    &__burger {
         background-color: transparent;
         border: none;
-        position: absolute;
-        top: 40px;
-        right: 40px;
-        display: grid;
-        place-items: center;
+        padding: 0;
+        width: 24px;
+        height: 24px;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: none;
+        }
     }
+}
+
+.modal-btn-close,
+.mobile-menu__button-close {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: grid;
+    place-items: center;
 }
 
 .formats {

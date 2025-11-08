@@ -25,7 +25,19 @@
                         <li><a class="link" href="#contacts-section">Контакти</a></li>
                     </ul>
                 </nav>
-                <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
+                <button class="button modal-btn-open header__button" type="button">Замовити дзвінок</button>
+                <button class="header__burger menu-btn-open" type="button">
+                    <svg class="burger-icon">
+                        <use href="./images/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu">
+                    <button class="mobile-menu__button-close menu-btn-close" type="button">
+                        <svg class="modal-icon">
+                            <use href="./images/sprite.svg#icon-x-modal"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -34,6 +46,7 @@
         <section class="section hero">
             <div class="container">
                 <h1 class="hero__title centred"><span class="accent">Сучасна</span> пекарня</h1>
+                <button class="button modal-btn-open hero__button" type="button">Замовити дзвінок</button>
             </div>
         </section>
         <section class="advantages">
@@ -46,7 +59,7 @@
                 </ul>
             </div>
         </section>
-        <section class="traditions section" id="traditions-section">
+        <!-- <section class="traditions section" id="traditions-section">
             <div class="container">
                 <div class="traditions__container">
                     <div class="traditions__content">
@@ -66,8 +79,8 @@
                 </div>
             </div>
 
-        </section>
-        <section class="section chefs" id="chefs-section">
+        </section> -->
+        <!-- <section class="section chefs" id="chefs-section">
             <div class="container">
                 <h2 class="chefs__title centred">Наші найкращі <br><span class="chefs-title-span">шеф-кухарі</span>
                 </h2>
@@ -106,8 +119,8 @@
 
             </div>
 
-        </section>
-        <section class="section" id="formats">
+        </section> -->
+        <!-- <section class="section" id="formats">
             <div class="container">
                 <h2 class="formats__title centred">Формати</h2>
                 <div class="formats__flex">
@@ -157,8 +170,8 @@
 
             </div>
 
-        </section>
-        <section class="section contacts" id="contacts-section">
+        </section> -->
+        <!-- <section class="section contacts" id="contacts-section">
             <div class="container contacts__container">
                 <div class="contacts__aside">
                     <h2 class="contacts__title">Приєднуйся до мережі пекарень</h2>
@@ -194,9 +207,9 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-        </section>
+        </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer__container">
             <nav class="footer__nav">
                 <a href="/">
@@ -245,11 +258,11 @@
         </div>
 
 
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden">
         <div class="modal">
-            <button class="modal__btn-close" type="button">
+            <button class="modal-btn-close" type="button">
                 <svg class="modal-icon">
                     <use href="./images/sprite.svg#icon-x-modal"></use>
                 </svg>
@@ -282,7 +295,10 @@
             </div>
         </div>
     </div>
+
+    <script type="module" src="./js/menu.js"></script>
     <script type="module" src="./js/modal.js"></script>
+
 </body>
 
 </html>
