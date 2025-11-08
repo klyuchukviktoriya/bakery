@@ -1,24 +1,23 @@
-@import "./base";
-@import "./utils/variables";
-@import "./utils/fonts";
-@import "./utils/utils";
-@import "./utils/mixins";
+@use "./utils/index" as *;
+@use "./base" as *;
 
-@import "./components/buttons";
-@import "./components/logo";
-@import "./components/links";
-@import "./components/chef-card";
-@import "./components/format-card";
-@import "./components/forms";
-@import "./components/icons";
+/* компоненты */
+@use "./components/buttons" as *;
+@use "./components/logo" as *;
+@use "./components/links" as *;
+@use "./components/chef-card" as *;
+@use "./components/format-card" as *;
+@use "./components/forms" as *;
+@use "./components/icons" as *;
 
-@import "./layouts/header";
-@import "./layouts/hero-section";
-@import "./layouts/advantages-section";
-@import "./layouts/traditions-section";
-@import "./layouts/chefs-section";
-@import "./layouts/formats-section";
-@import "./layouts/contacts-section";
-@import "./layouts/footer";
-@import "./layouts/modal";
-@import "./layouts/mobile-menu";
+/* лэйауты */
+@use "./layouts/header" as *;
+@use "./layouts/hero-section" as *;
+@use "./layouts/advantages-section" as *;
+@use "./layouts/traditions-section" as *;
+@use "./layouts/chefs-section" as *;
+@use "./layouts/formats-section" as *;
+@use "./layouts/contacts-section" as *;
+@use "./layouts/footer" as *;
+@use "./layouts/modal" as *;
+@use "./layouts/mobile-menu" as *;
