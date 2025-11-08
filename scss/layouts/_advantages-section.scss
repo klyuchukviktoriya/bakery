@@ -27,10 +27,11 @@
 
     &__item {
         font-size: 14px;
-        font-weight: 300;
+
         color: var(--color-dark);
 
         @media screen and (min-width: $bp-tablet) {
+            font-weight: 300;
             color: var(--color-light);
         }
 

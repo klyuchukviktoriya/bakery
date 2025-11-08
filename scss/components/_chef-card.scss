@@ -6,10 +6,20 @@
 
     &__image {
         border-radius: 4px 4px 4px 200px;
-        box-shadow: -16px 16px 0 0 var(--color-light), -16px 16px 0 2px var(--accent-brown);
-        width: 240px;
-        height: 390px;
+        box-shadow: -10px 10px 0 0 var(--color-light), -10px 10px 0 2px var(--accent-brown);
+        width: 140px;
+        height: 226px;
         transition: all 0.3s ease;
+
+        @media screen and (min-width: $bp-desktop) {
+            box-shadow: -16px 16px 0 0 var(--color-light), -16px 16px 0 2px var(--accent-brown);
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 240px;
+            height: 390px;
+
+        }
 
         &:hover {
             transform: scale(1.03);
@@ -25,5 +35,29 @@
 
     &__text {
         margin-bottom: 24px;
+        font-size: 14px;
+
+        @media screen and (min-width: $bp-tablet) {
+            // &.nastya {
+            //     max-width: 254px;
+            // }
+
+            // &.vlad {
+            //     max-width: 334px;
+            // }
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 18px;
+
+            &.nastya {
+                max-width: 258px;
+            }
+
+            &.vlad {
+                max-width: 334px;
+            }
+
+        }
     }
 }

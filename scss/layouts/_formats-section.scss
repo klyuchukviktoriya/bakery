@@ -1,6 +1,8 @@
 @use "../utils/index" as *;
 
 .formats {
+    display: none;
+
     &__title {
         font-size: 64px;
         font-weight: 900;
