@@ -1,7 +1,6 @@
 @use "./utils/index" as *;
 @use "./base" as *;
 
-/* компоненты */
 @use "./components/buttons" as *;
 @use "./components/logo" as *;
 @use "./components/links" as *;
@@ -10,7 +9,6 @@
 @use "./components/forms" as *;
 @use "./components/icons" as *;
 
-/* лэйауты */
 @use "./layouts/header" as *;
 @use "./layouts/hero-section" as *;
 @use "./layouts/advantages-section" as *;

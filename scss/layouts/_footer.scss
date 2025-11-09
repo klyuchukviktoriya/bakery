@@ -12,56 +12,168 @@
     &::after {
         content: "";
         position: absolute;
-        bottom: 0;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     &::before {
-        background-image: url("../images/footer-1.png");
-        width: 180px;
-        height: 120px;
+        background-image: url("../images/footer-1-mob.png");
+        width: 98px;
+        height: 240px;
         left: 0;
+        bottom: 274px;
+
+        @media screen and (min-width:$bp-tablet) {
+            width: 66px;
+            height: 160px;
+            left: -20px;
+            bottom: 40px;
+        }
+
+        @media screen and (min-width:$bp-desktop) {
+            background-image: url("../images/footer-1.png");
+            width: 184px;
+            height: 126px;
+            bottom: 0;
+        }
     }
 
     &::after {
-        background-image: url("../images/footer-2.png");
-        width: 380px;
-        height: 190px;
+        background-image: url("../images/footer-2-mob.png");
         right: 0;
+        bottom: 0;
+        width: 111px;
+        height: 99px;
+
+        @media screen and (min-width:$bp-desktop) {
+            background-image: url("../images/footer-2.png");
+            width: 220px;
+            height: 108px;
+        }
+
+        @media screen and (min-width:1580px) {
+            background-image: url("../images/footer-2.png");
+            width: 380px;
+            height: 188px;
+        }
     }
 
     &__container {
         display: flex;
-        gap: 166px;
-        justify-content: space-between;
+        gap: 16px;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (min-width:$bp-tablet) {
+            align-items: start;
+            flex-direction: row;
+            gap: 166px;
+            justify-content: space-between;
+        }
     }
 
     &__nav {
         display: flex;
-        flex-grow: 1;
-        justify-content: space-between;
-        gap: 40px;
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+
+        @media screen and (min-width:$bp-tablet) {
+            gap: 8px;
+        }
+
+        @media screen and (min-width:$bp-desktop) {
+            gap: 166px;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: start;
+        }
+
+        &--list {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            align-items: center;
+
+            @media screen and (min-width:$bp-tablet) {
+                padding-left: 16px;
+                gap: 8px;
+                flex: 1;
+                align-items: start;
+
+            }
+
+            @media screen and (min-width:$bp-desktop) {
+                text-align: left;
+                padding-left: 0;
+            }
+        }
+    }
+
+    &__address {
+        margin-bottom: 16px;
+
+        @media screen and (min-width:$bp-tablet) {
+            flex: 1;
+            margin-bottom: 0;
+        }
+
+        &--list {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 18px;
+
+            @media screen and (min-width:$bp-tablet) {
+                text-align: left;
+            }
+
+            @media screen and (min-width:$bp-desktop) {
+                gap: 16px;
+                text-align: left;
+            }
+        }
+    }
+
+
+
+    &__aside {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+
+        @media screen and (min-width:$bp-tablet) {
+            align-items: start;
+        }
+
+        @media screen and (min-width:$bp-desktop) {
+            gap: 16px;
+        }
     }
 
     &__policy {
-        font-size: 16px;
         font-weight: 300;
         color: var(--color-light);
-        margin-bottom: 16px;
     }
 
     &__copy {
-        font-size: 14px;
         color: var(--accent-brown);
         font-weight: 400;
-        margin-bottom: 16px;
+    }
+
+    &__copy,
+    &__policy {
+        font-size: 14px;
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 16px;
+        }
     }
 
     &__icons {
         display: flex;
-        margin-bottom: 16px;
         gap: 22px;
-
     }
 }

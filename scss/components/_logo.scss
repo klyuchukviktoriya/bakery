@@ -1,9 +1,14 @@
 @use "../utils/index" as *;
 
 .logo {
-    width: 114px;
-    height: 56px;
+    width: 72px;
+    height: 38px;
     transition: all 0.3s ease;
+
+    @media screen and (min-width:$bp-desktop) {
+        width: 114px;
+        height: 56px;
+    }
 
     &:hover {
         scale: 1.03;
