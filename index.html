@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -135,53 +136,101 @@
             <div class="container">
                 <h2 class="formats__title centred">Формати</h2>
                 <div class="formats__flex">
-                    <button class="formats__button" type="button">
+                    <button class="formats__button--prev" type="button">
                         <svg class="formats__icon">
                             <use href="./images/sprite.svg#icon-arrow-left"></use>
                         </svg>
                     </button>
-                    <ul class="formats__list">
-                        <li class="formats__item format">
-                            <img class="format__image" src="./images/format-1.jpg" alt="format-1" />
-                            <article class="format__card">
-                                <h3 class="format__title" lang="en">
-                                    Walrus
-                                </h3>
-                                <p class="format__text">
-                                    Площа: до 120 м2 Меню: розширене меню Штат: 2
-                                    продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                                    офіціанти-різнороби Посадкові місця: є
-                                </p>
-                            </article>
-                        </li>
-                        <li class="formats__item format">
-                            <img class="format__image" src="./images/format-2.jpg" alt="format-2" />
-                            <article class="format__card">
-                                <h3 class="format__title" lang="en">
-                                    Horseshoe
-                                </h3>
-                                <p class="format__text">
-                                    Площа: до 25 м2 Меню: найпопулярніші позиції меню Штат: 2
-                                    продавці-касири, 2 пекарі, 1 помічник пекаря Посадкові
-                                    місця: відсутні
-                                </p>
-                            </article>
-                        </li>
-                        <li class="formats__item format">
-                            <img class="format__image" src="./images/format-3.jpg" alt="format-3" />
-                            <article class="format__card">
-                                <h3 class="format__title" lang="en">
-                                    Handlebar
-                                </h3>
-                                <p class="format__text">
-                                    Площа: до 15 м2 Меню: найпопулярніші позиції меню Штат: 1
-                                    продавець, 1 пекар, 1 помічник пекаря Посадкові місця:
-                                    відсутні
-                                </p>
-                            </article>
-                        </li>
-                    </ul>
-                    <button class="formats__button" type="button">
+                    <div class="swiper">
+                        <ul class="formats__list swiper-wrapper">
+                            <li class="format swiper-slide">
+                                <article class="format__card">
+                                    <img class="format__image" src="./images/format-1.jpg" alt="format-1" />
+                                    <h3 class="format__title" lang="en">
+                                        Walrus
+                                    </h3>
+                                    <p class="format__text">
+                                        Площа: до 120 м2 Меню: розширене меню Штат: 2
+                                        продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                                        офіціанти-різнороби Посадкові місця: є
+                                    </p>
+                                </article>
+                            </li>
+                            <li class="format swiper-slide">
+                                <article class="format__card">
+                                    <img class="format__image" src="./images/format-2.jpg" alt="format-2" />
+                                    <h3 class="format__title" lang="en">
+                                        Horseshoe
+                                    </h3>
+                                    <p class="format__text">
+                                        Площа: до 25 м2 Меню: найпопулярніші позиції меню Штат: 2
+                                        продавці-касири, 2 пекарі, 1 помічник пекаря Посадкові
+                                        місця: відсутні
+                                    </p>
+                                </article>
+                            </li>
+                            <li class="format swiper-slide">
+                                <article class="format__card">
+                                    <img class="format__image" src="./images/format-3.jpg" alt="format-3" />
+                                    <h3 class="format__title" lang="en">
+                                        Handlebar
+                                    </h3>
+                                    <p class="format__text">
+                                        Площа: до 15 м2 Меню: найпопулярніші позиції меню Штат: 1
+                                        продавець, 1 пекар, 1 помічник пекаря Посадкові місця:
+                                        відсутні
+                                    </p>
+                                </article>
+                            </li>
+                            <li class="format swiper-slide">
+                                <article class="format__card">
+                                    <img class="format__image" src="./images/format-1.jpg" alt="format-1" />
+                                    <h3 class="format__title" lang="en">
+                                        Walrus
+                                    </h3>
+                                    <p class="format__text">
+                                        Площа: до 120 м2 Меню: розширене меню Штат: 2
+                                        продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                                        офіціанти-різнороби Посадкові місця: є
+                                    </p>
+                                </article>
+                            </li>
+                            <li class="format swiper-slide">
+                                <article class="format__card">
+                                    <img class="format__image" src="./images/format-2.jpg" alt="format-2" />
+                                    <h3 class="format__title" lang="en">
+                                        Horseshoe
+                                    </h3>
+                                    <p class="format__text">
+                                        Площа: до 25 м2 Меню: найпопулярніші позиції меню Штат: 2
+                                        продавці-касири, 2 пекарі, 1 помічник пекаря Посадкові
+                                        місця: відсутні
+                                    </p>
+                                </article>
+                            </li>
+                            <li class="format swiper-slide">
+                                <article class="format__card">
+                                    <img class="format__image" src="./images/format-3.jpg" alt="format-3" />
+                                    <h3 class="format__title" lang="en">
+                                        Handlebar
+                                    </h3>
+                                    <p class="format__text">
+                                        Площа: до 15 м2 Меню: найпопулярніші позиції меню Штат: 1
+                                        продавець, 1 пекар, 1 помічник пекаря Посадкові місця:
+                                        відсутні
+                                    </p>
+                                </article>
+                            </li>
+                        </ul>
+                        <div class="pagination">
+                            <span class="pagination__button"></span>
+                            <span class="pagination__button"></span>
+                            <span class="pagination__button"></span>
+                            <span class="pagination__button"></span>
+                        </div>
+                    </div>
+
+                    <button class="formats__button--next" type="button">
                         <svg class="formats__icon">
                             <use href="./images/sprite.svg#icon-arrow-right"></use>
                         </svg>
@@ -189,7 +238,7 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="section contacts" id="contacts-section">
+        <section class="section contacts" id="contacts-section">
             <div class="container contacts__container">
                 <div class="contacts__aside">
                     <h2 class="contacts__title">Приєднуйся до мережі пекарень</h2>
@@ -225,7 +274,7 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-        </section> -->
+        </section>
     </main>
     <footer class="footer">
         <div class="container footer__container">
@@ -319,7 +368,8 @@
             </div>
         </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/swiper.js"></script>
     <script type="module" src="./js/menu.js"></script>
     <script type="module" src="./js/modal.js"></script>
 </body>

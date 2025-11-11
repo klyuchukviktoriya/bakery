@@ -1,6 +1,8 @@
 @use "../utils/index" as *;
 
 .contacts {
+    display: none;
+
     &__container {
         display: flex;
         gap: 32px;

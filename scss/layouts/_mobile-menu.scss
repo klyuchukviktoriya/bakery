@@ -9,6 +9,7 @@
     background: var(--color-light);
     transform: translateX(-100%);
     transition: transform 1s;
+    z-index: 999;
 
     &.is-open {
         transform: translateX(0);

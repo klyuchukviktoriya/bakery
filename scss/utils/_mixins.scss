@@ -1,15 +1,27 @@
+@use "variables" as *;
+
 @mixin input {
     width: 100%;
-    padding: 16px 42px;
+    padding: 8px 24px;
     border-radius: 8px;
     border: 2px solid var(--accent-brown);
     outline: none;
-    font-size: 16px;
+    font-size: 14px;
     text-align: left;
     transition: all 0.3s ease;
 
+    @media screen and (min-width: $bp-tablet) {
+        font-size: 16px;
+        padding: 16px 42px;
+    }
+
     &::placeholder {
+        font-size: 14px;
         color: var(--accent-brown);
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 16px;
+        }
     }
 
     &:focus {

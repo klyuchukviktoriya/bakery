@@ -1,8 +1,6 @@
 @use "../utils/index" as *;
 
 .formats {
-    display: none;
-
     &__title {
         font-size: 64px;
         font-weight: 900;
@@ -17,20 +15,10 @@
     }
 
     &__list {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+        margin-bottom: 16px;
 
-    &__item {
-        flex-basis: calc((100% - 40px) / 3);
-        transition: all 0.3s ease;
-        color: var(--color-light);
-
-        &:hover {
-            transform: scale(1.03);
-            z-index: 1;
+        @media screen and (min-width: $bp-tablet) {
+            margin-bottom: 32px;
         }
     }
 }

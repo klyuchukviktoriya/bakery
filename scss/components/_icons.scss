@@ -15,7 +15,8 @@
         transition: all 0.3s ease;
     }
 
-    &__button:hover>&__icon {
+    &__button--prev:hover>&__icon,
+    &__button--next:hover>&__icon {
         stroke: var(--color-light);
         fill: var(--color-light);
     }
