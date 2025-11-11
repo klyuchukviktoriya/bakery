@@ -14,3 +14,14 @@
         scale: 1.03;
     }
 }
+
+.mobile-menu__logo {
+    width: 120px;
+    height: 64px;
+    fill: var(--color-dark);
+
+    @media screen and (min-width:$bp-tablet) {
+        width: 144px;
+        height: 76px;
+    }
+}

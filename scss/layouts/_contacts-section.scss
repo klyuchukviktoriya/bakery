@@ -1,12 +1,24 @@
 @use "../utils/index" as *;
 
+.contacts.section {
+    padding: 20px 0 0 0;
+}
+
 .contacts {
-    display: none;
 
     &__container {
         display: flex;
-        gap: 32px;
-        margin-bottom: 48px;
+        gap: 24px;
+        flex-direction: column;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            gap: 32px;
+            margin-bottom: 48px;
+        }
     }
 
     &__aside {
@@ -14,19 +26,55 @@
     }
 
     &__title {
-        font-size: 64px;
-        font-weight: 900;
+        font-size: 32px;
+        font-weight: 600;
         line-height: 1.3;
-        margin-bottom: 16px;
+        margin-bottom: 8px;
+        text-align: center;
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 48px;
+            margin-bottom: 16px;
+            font-weight: 900;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 64px;
+            text-align: left;
+        }
+    }
+
+    &__text {
+        margin-bottom: 24px;
+        text-align: center;
+        font-size: 14px;
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 18px;
+            text-align: left;
+            margin-bottom: 42px;
+        }
     }
 
     &__agreement {
         font-size: 12px;
+        display: none;
+
+        @media screen and (min-width: $bp-tablet) {
+            display: block;
+        }
     }
 
     &__map {
-        flex: 1;
         border: none;
-        border-radius: 16px;
+        margin: 0 -20px;
+
+        @media screen and (min-width: $bp-tablet) {
+            border-radius: 16px;
+            margin: 0;
+            height: 595px;
+            margin-bottom: 24px;
+            flex: 1;
+        }
     }
 }

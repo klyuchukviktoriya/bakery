@@ -16,7 +16,11 @@
         max-width: 710px;
         display: flex;
         flex-direction: column;
-        gap: 42px;
+        gap: 24px;
+
+        @media screen and (min-width: $bp-tablet) {
+            gap: 42px;
+        }
     }
 
     &__title {

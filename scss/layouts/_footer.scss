@@ -3,7 +3,7 @@
 .footer {
     padding: 32px 0;
     background-color: var(--color-dark);
-    background-image: url("../images//footer-bg.png");
+    background-image: url("../images/footer-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -100,7 +100,6 @@
                 gap: 8px;
                 flex: 1;
                 align-items: start;
-
             }
 
             @media screen and (min-width:$bp-desktop) {
@@ -134,8 +133,6 @@
             }
         }
     }
-
-
 
     &__aside {
         flex: 1;
