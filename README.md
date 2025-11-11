@@ -17,8 +17,8 @@ The project was implemented based on a provided Figma design.
 
 ## 🚀 Technologies
 
-- **HTML5 / SCSS** (BEM structure, mixins, variables)
-- **SCSS ( compiled into CSS)
+- **HTML5 / SCSS** (BEM structure, mixins, variables)**
+- **SCSS ( compiled into CSS)**
 - **Vanilla JavaScript**
 - **Swiper**
 
