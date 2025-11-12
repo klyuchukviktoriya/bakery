@@ -1,6 +1,6 @@
-# Shop Bakery
+# 🥐 Shop Bakery
 
-A fully responsive, single-page website made to demonstare my skills.  
+A fully responsive, single-page website created to demonstrate my front-end skills.  
 The project was implemented based on a provided Figma design.
 
 🔗 **[Live Demo](https://bakery-shop-kv.netlify.app/)**
@@ -17,16 +17,18 @@ The project was implemented based on a provided Figma design.
 
 ## 🚀 Technologies
 
-- **HTML5 / SCSS** (BEM structure, mixins, variables)
-- **SCSS ( compiled into CSS)
+- **HTML5 / SCSS** (BEM methodology, mixins, variables)
+- **SCSS** (compiled into CSS)
 - **Vanilla JavaScript**
-- **Swiper**
+- **Swiper.js**
 
 ---
 
 ## ⚙️ Installation and Usage
 
 ### Installation
+
+Clone the repository and open it locally:
 
 ```bash
 git clone https://github.com/klyuchukviktoriya/bakery.git
@@ -39,7 +41,7 @@ Open in your browser at
 
 ## 📦 Structure
 
-- scss/     — sourse styles
+- scss/     — source styles
 - css/      — compiled styles
 - js/       — scripts
 - images/   — images
