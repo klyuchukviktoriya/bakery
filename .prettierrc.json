@@ -8,5 +8,6 @@
     "trailingComma": "none",
     "arrowParens": "avoid",
     "endOfLine": "auto",
-    "singleAttributePerLine": true
+    "singleAttributePerLine": true,
+    "htmlWhitespaceSensitivity": "ignore"
 }
