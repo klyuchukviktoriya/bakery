@@ -1,6 +1,7 @@
 # 🥐 Shop Bakery
 
 A fully responsive, single-page website created to demonstrate my front-end skills.  
+A clean responsive layout, animations, and pixel-perfect typography — created to mirror real-world client work.  
 The project was implemented based on a provided Figma design.
 
 🔗 **[Live Demo](https://bakery-shop-kv.netlify.app/)**

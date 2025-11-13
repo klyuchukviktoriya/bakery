@@ -2,11 +2,8 @@
 
 .footer {
     padding: 32px 0;
-    background-color: var(--color-dark);
-    background-image: url("../images/footer-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
     position: relative;
+    @include footer-bg("footer-bg-mob", "footer-bg");
 
     &::before,
     &::after {

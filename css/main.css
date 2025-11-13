@@ -451,8 +451,7 @@ html {
   inset: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: all 0.3s ease;
 }
 .format__title {
@@ -520,18 +519,11 @@ html {
     padding: 16px 42px;
   }
 }
-.modal__input::-moz-placeholder {
-  font-size: 14px;
-  color: var(--accent-brown);
-}
 .modal__input::placeholder {
   font-size: 14px;
   color: var(--accent-brown);
 }
 @media screen and (min-width: 768px) {
-  .modal__input::-moz-placeholder {
-    font-size: 16px;
-  }
   .modal__input::placeholder {
     font-size: 16px;
   }
@@ -580,18 +572,11 @@ html {
     padding: 16px 42px;
   }
 }
-.contacts__form--input::-moz-placeholder {
-  font-size: 14px;
-  color: var(--accent-brown);
-}
 .contacts__form--input::placeholder {
   font-size: 14px;
   color: var(--accent-brown);
 }
 @media screen and (min-width: 768px) {
-  .contacts__form--input::-moz-placeholder {
-    font-size: 16px;
-  }
   .contacts__form--input::placeholder {
     font-size: 16px;
   }
@@ -672,10 +657,34 @@ html {
 
 .hero {
   padding: 122px 0 32px;
-  background: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url("../images/hero.jpg"), var(--accent);
+  background: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url("../images/hero-mob.jpg"), var(--accent);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+}
+@supports (background-image: url("image.webp")) {
+  .hero {
+    background: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url("../images/hero-mob.webp"), var(--accent);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url("../images/hero.jpg"), var(--accent);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+  @supports (background-image: url("image.webp")) {
+    .hero {
+      background: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url("../images/hero.webp"), var(--accent);
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
+    }
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -990,11 +999,27 @@ html {
 
 .footer {
   padding: 32px 0;
+  position: relative;
   background-color: var(--color-dark);
-  background-image: url("../images/footer-bg.png");
+  background-image: url("../images/footer-bg-mob.png");
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
+  background-position: center;
+}
+@supports (background-image: url("image.webp")) {
+  .footer {
+    background-image: url("../images/footer-bg-mob.webp");
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    background-image: url("../images/footer-bg.png");
+  }
+  @supports (background-image: url("image.webp")) {
+    .footer {
+      background-image: url("../images/footer-bg.webp");
+    }
+  }
 }
 .footer::before, .footer::after {
   content: "";
@@ -1292,4 +1317,6 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -2,16 +2,7 @@
 
 .hero {
     padding: 122px 0 32px;
-    background:
-        linear-gradient(103deg,
-            rgba(18, 18, 17, 0.78) 2.03%,
-            rgba(18, 18, 17, 0.60) 58.46%,
-            rgba(18, 18, 17, 0.00) 90.36%),
-        url("../images/hero.jpg"),
-        var(--accent);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
+    @include hero-bg("hero-mob", "hero");
 
     @media screen and (min-width: $bp-tablet) {
         padding: 122px 0 64px;

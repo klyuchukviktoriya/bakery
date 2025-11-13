@@ -34,3 +34,59 @@
         border: 2px solid var(--accent);
     }
 }
+
+@mixin hero-bg-position {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+@mixin hero-bg($mob-file,
+    $desk-file,
+    $color: var(--accent)) {
+    background: $hero-gradient,
+    url("../images/#{$mob-file}.jpg"),
+    $color;
+    @include hero-bg-position;
+
+    @supports (background-image: url("image.webp")) {
+        background: $hero-gradient,
+        url("../images/#{$mob-file}.webp"),
+        $color;
+        @include hero-bg-position;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+        background: $hero-gradient,
+        url("../images/#{$desk-file}.jpg"),
+        $color;
+        @include hero-bg-position;
+
+        @supports (background-image: url("image.webp")) {
+            background: $hero-gradient,
+            url("../images/#{$desk-file}.webp"),
+            $color;
+            @include hero-bg-position;
+        }
+    }
+}
+
+@mixin footer-bg($mob-file, $desk-file, $color: var(--color-dark)) {
+    background-color: $color;
+    background-image: url("../images/#{$mob-file}.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @supports (background-image: url("image.webp")) {
+        background-image: url("../images/#{$mob-file}.webp");
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+        background-image: url("../images/#{$desk-file}.png");
+
+        @supports (background-image: url("image.webp")) {
+            background-image: url("../images/#{$desk-file}.webp");
+        }
+    }
+}
