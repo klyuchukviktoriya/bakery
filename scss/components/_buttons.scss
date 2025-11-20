@@ -117,29 +117,60 @@
 
 .btn-up {
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 20px;
+    right: 20px;
     border: none;
     border-radius: 8px;
     background-color: var(--accent);
-    width: 142px;
-    height: 44px;
-    color: var(--color-light);
-    font-size: 16px;
-    font-weight: 600;
+    width: 36px;
+    height: 36px;
     display: grid;
     place-items: center;
     opacity: 0;
     pointer-events: none;
     z-index: 999;
     transition: all 0.3s ease;
+    animation: pulse 1.8s ease-in-out infinite;
+
+    @media screen and (min-width: $bp-desktop) {
+        width: 44px;
+        height: 44px;
+        bottom: 40px;
+        right: 40px;
+    }
 
     &:hover {
         background-color: var(--accent-dark);
+    }
+
+    svg {
+        transform: rotate(-90deg);
+        width: 18px;
+        height: 18px;
+        fill: var(--color-light);
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 24px;
+            height: 24px;
+        }
     }
 }
 
 .btn-up.show {
     opacity: 1;
     pointer-events: auto;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }

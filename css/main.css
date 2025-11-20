@@ -270,25 +270,43 @@ html {
 
 .btn-up {
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: 20px;
+  right: 20px;
   border: none;
   border-radius: 8px;
   background-color: var(--accent);
-  width: 142px;
-  height: 44px;
-  color: var(--color-light);
-  font-size: 16px;
-  font-weight: 600;
+  width: 36px;
+  height: 36px;
   display: grid;
   place-items: center;
   opacity: 0;
   pointer-events: none;
   z-index: 999;
   transition: all 0.3s ease;
+  animation: pulse 1.8s ease-in-out infinite;
+}
+@media screen and (min-width: 1280px) {
+  .btn-up {
+    width: 44px;
+    height: 44px;
+    bottom: 40px;
+    right: 40px;
+  }
 }
 .btn-up:hover {
   background-color: var(--accent-dark);
+}
+.btn-up svg {
+  transform: rotate(-90deg);
+  width: 18px;
+  height: 18px;
+  fill: var(--color-light);
+}
+@media screen and (min-width: 1280px) {
+  .btn-up svg {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .btn-up.show {
@@ -296,6 +314,17 @@ html {
   pointer-events: auto;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .logo {
   width: 72px;
   height: 38px;
@@ -451,7 +480,8 @@ html {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: all 0.3s ease;
 }
 .format__title {
@@ -519,11 +549,18 @@ html {
     padding: 16px 42px;
   }
 }
+.modal__input::-moz-placeholder {
+  font-size: 14px;
+  color: var(--accent-brown);
+}
 .modal__input::placeholder {
   font-size: 14px;
   color: var(--accent-brown);
 }
 @media screen and (min-width: 768px) {
+  .modal__input::-moz-placeholder {
+    font-size: 16px;
+  }
   .modal__input::placeholder {
     font-size: 16px;
   }
@@ -572,11 +609,18 @@ html {
     padding: 16px 42px;
   }
 }
+.contacts__form--input::-moz-placeholder {
+  font-size: 14px;
+  color: var(--accent-brown);
+}
 .contacts__form--input::placeholder {
   font-size: 14px;
   color: var(--accent-brown);
 }
 @media screen and (min-width: 768px) {
+  .contacts__form--input::-moz-placeholder {
+    font-size: 16px;
+  }
   .contacts__form--input::placeholder {
     font-size: 16px;
   }
@@ -1317,6 +1361,4 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
