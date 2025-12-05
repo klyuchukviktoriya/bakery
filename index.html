@@ -10,6 +10,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <meta
+      name="description"
+      content="Сучасна пекарня у Києві: свіжа випічка, натуральні інгредієнти, авторські десерти та найкращі шеф-кухарі. Доставка та замовлення за 5 хвилин. Приєднуйтесь до мережі пекарень!"
+    />
+
     <title>Сучасна пекарня</title>
     <link
       rel="preload"
@@ -91,6 +96,7 @@
           <button
             class="header__burger menu-btn-open"
             type="button"
+            aria-label="Відкрити меню"
           >
             <svg class="burger-icon">
               <use href="./images/sprite.svg#icon-menu"></use>
@@ -100,13 +106,17 @@
             <button
               class="mobile-menu__button-close menu-btn-close"
               type="button"
+              aria-label="Закрити меню"
             >
               <svg class="modal-icon">
                 <use href="./images/sprite.svg#icon-x-modal"></use>
               </svg>
             </button>
             <nav class="mobile-menu__nav">
-              <a href="/">
+              <a
+                href="/"
+                aria-label="Посилання на головну сторінку"
+              >
                 <img
                   class="mobile-menu__logo"
                   src="./images/logo-mob.svg"
@@ -520,7 +530,10 @@
     <footer class="footer">
       <div class="container footer__container">
         <nav class="footer__nav">
-          <a href="/">
+          <a
+            href="/"
+            aria-label="Посилання на головну сторінку"
+          >
             <img
               class="logo"
               src="./images/logo.svg"
@@ -568,12 +581,18 @@
               <a href="tel:+380960000007">+ 38 (096) 000 00 07</a>
             </li>
             <li class="footer__address--link">
-              <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+              <a
+                href="mailto:shopbakery@gmail.com"
+                aria-label="Відправити електронне повідомлення"
+              >
+                shopbakery@gmail.com
+              </a>
             </li>
             <li class="footer__address--link">
               <a
                 href="https://maps.app.goo.gl/ckiLxKu14iND2mD2A"
                 target="_blank"
+                aria-label="Відкрити сайт Google Maps"
               >
                 Україна, м.Київ,
                 <br />
@@ -588,6 +607,7 @@
               href="http://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Посилання на Facebook"
             >
               <svg class="footer__icon">
                 <use href="./images/sprite.svg#icon-facebook"></use>
@@ -597,6 +617,7 @@
               href="http://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Посилання на Instagram"
             >
               <svg class="footer__icon">
                 <use href="./images/sprite.svg#icon-instagram"></use>
@@ -701,6 +722,7 @@
     <button
       class="btn-up"
       id="btn-up"
+      aria-label="На початок сторінки"
     >
       <svg>
         <use href="./images/sprite.svg#icon-arrow-right"></use>
